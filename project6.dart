@@ -26,8 +26,16 @@ void main() {
   int maxValue = numbers1.reduce(max);
   print('Maximum value: $maxValue');
 
-  var vals = ["89,56,76,59,86,57,69,70"];
+  var vals = [9, 8, 5, 6, 7];
   var reversed = List.of(vals.reversed);
   print(reversed);
-  }
 
+  List originalList = [34, -2, 23, -45, 12, -9, 56];
+
+  List positiveNumbers = filterPositiveNumbers(originalList);
+  print('Positive numbers: $positiveNumbers');
+}
+
+List filterPositiveNumbers(List numbers) {
+  return numbers.where((number) => number >= 0).toList();
+}
