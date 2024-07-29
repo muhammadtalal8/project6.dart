@@ -1,4 +1,3 @@
-import 'dart:html_common';
 import 'dart:math';
 
 void main() {
@@ -26,9 +25,9 @@ void main() {
 
   int maxValue = numbers1.reduce(max);
   print('Maximum value: $maxValue');
-}
 
   var vals = ["89,56,76,59,86,57,69,70"];
   var reversed = List.of(vals.reversed);
   print(reversed);
-}
+  }
+
